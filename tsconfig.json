@@ -1,0 +1,58 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "sourceMap": true,
+    "removeComments": false,
+    "strict": true,
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "lib": [
+      "dom",
+      "esnext",
+      "esnext.asynciterable"
+    ],
+    "types": [
+      "node",
+      "react",
+      "react-dom",
+      "jest",
+      "zustand",
+      "@types/react-router-dom",
+      "@supabase/supabase-js"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": [
+        "components/*"
+      ],
+      "@pages/*": [
+        "pages/*"
+      ],
+      "@styles/*": [
+        "styles/*"
+      ],
+      "@utils/*": [
+        "utils/*"
+      ]
+    },
+    "skipLibCheck": true
+  },
+  "include": [
+    "app/**/*.ts",
+    "app/**/*.tsx",
+    "pages/**/*.ts",
+    "pages/**/*.tsx",
+    "components/**/*.ts",
+    "components/**/*.tsx",
+    "utils/**/*.ts",
+    "styles/**/*.ts",
+    "next.config.js",
+    "tailwind.config.js"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
